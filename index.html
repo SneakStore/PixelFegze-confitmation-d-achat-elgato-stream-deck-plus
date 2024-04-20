@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Confirmation d'Achat</title>
@@ -59,6 +59,12 @@
         .produit-detail img {
             border-radius: 5px;
             margin-bottom: 15px;
+            width: 15%;
+            transition: transform 0.3s;
+        }
+
+        .produit-detail img:hover {
+            transform: scale(1.1);
         }
 
         .produit-detail h2 {
@@ -181,8 +187,23 @@
             font-size: 24px; /* Taille du texte */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police */
         }
+
+        .arrow-button {
+            color: rgba(0, 0, 0, 0.5);
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .arrow-button:hover {
+            color: rgba(0, 0, 0, 0.8);
+        }
     </style>
-    <script src="https://www.paypal.com/sdk/js?client-id=AYV4Q5HSkqCiE2F_vEMfDHclMQKa_3DgEwUAMCcvzGpnUvYcK8kjiUVhCW-M8RlnYedjjyl8kalr-9Xv&currency=EUR"></script>
+    <script src="https://www.paypal.com/sdk/js?client-
+
+id=AYV4Q5HSkqCiE2F_vEMfDHclMQKa_3DgEwUAMCcvzGpnUvYcK8kjiUVhCW-M8RlnYedjjyl8kalr-9Xv&currency=EUR"></script>
 </head>
 <body>
 <div class="barre-navigation">
@@ -200,86 +221,135 @@
 
 <h1 style="color: #006400;">DÉCOUVREZ NOTRE PRODUIT PHARE</h1>
 
-<div class="conteneur-produit">
-    <div class="produit-detail">
-        <img src="https://tse4.mm.bing.net/th?id=OIP.VyAgIDySk_FAdYhcovhbcgHaFj&pid=Api&P=0&h=180" alt="" title="ELGATO STREAM DECK PLUS">
-        <h2>elgato stream deck plus</h2>
-        <p class="product-description">Le Elgato Stream Deck Plus est un contrôleur matériel puissant conçu pour simplifier les tâches complexes liées au streaming, à la création de contenu, à la productivité et bien plus encore. Doté de 15 touches LCD entièrement personnalisables, le Stream Deck Plus vous permet de créer des raccourcis, d'automatiser des actions et d'accéder instantanément à des commandes clés avec un simple toucher.
+<div class="produit-detail">
+    <button class="arrow-button" id="prev-button">&lt;</button>
+    <img id="product-image" src="https://tse3.mm.bing.net/th?id=OIP.Gw6HCNhif3W8l8-5e46Y4wHaEK&pid=Api&P=0&h=180" 
 
-Que vous soyez un streamer, un créateur de contenu, un professionnel du montage vidéo ou un passionné de technologie, le Stream Deck Plus vous offre une flexibilité et une efficacité inégalées dans l'exécution de vos tâches. Vous pouvez configurer chaque touche pour déclencher des actions spécifiques, telles que le lancement d'applications, l'activation de raccourcis clavier, le contrôle de l'éclairage, le changement de scènes dans les logiciels de streaming, et bien plus encore.
+alt="" title="">
+    <button class="arrow-button" id="next-button">&gt;</button>
+    <h2>elgato stream deck plus</h2>
+    <p class="product-description">"Le Elgato Stream Deck Plus est un contrôleur matériel puissant conçu pour 
 
-Grâce à son intégration étroite avec des plateformes populaires telles que OBS Studio, Streamlabs, Twitch, YouTube, et bien d'autres, le Stream Deck Plus vous permet de contrôler votre expérience de streaming et de création de contenu avec une facilité et une précision accrues. De plus, avec des mises à jour régulières du logiciel, de nouvelles fonctionnalités sont continuellement ajoutées pour améliorer votre flux de travail et vous offrir une expérience toujours plus riche et personnalisée.
+simplifier les tâches complexes liées au streaming, à la création de contenu, à la productivité et bien plus 
 
-Que vous souhaitiez améliorer votre productivité, simplifier votre flux de travail ou simplement ajouter une touche de magie à votre création de contenu, le Elgato Stream Deck Plus est l'outil parfait pour vous aider à atteindre vos objectifs avec style et efficacité.</p>
-        <p class="prix">Prix du Produit : 259,99€</p>
-        <button class="buy-button" onclick="showConfirmationMessage()">Ajouter au Panier</button>
-        <div class="security-icons">
-            <img src="https://via.placeholder.com/30" alt="Sécurité des paiements">
-            <span>Paiement sécurisé</span>
-        </div>
-        <p class="purchase-security">Achetez en toute sécurité grâce à notre système de paiement sécurisé. Nous protégeons vos informations personnelles.</p>
+encore. Doté de 15 touches LCD entièrement personnalisables, le Stream Deck Plus vous permet de créer des 
+
+raccourcis, d'automatiser des actions et d'accéder instantanément à des commandes clés avec un simple toucher. Que 
+
+vous soyez un streamer, un créateur de contenu, un professionnel du montage vidéo ou un passionné de technologie, 
+
+le Stream Deck Plus vous offre une flexibilité et une efficacité inégalées dans l'exécution de vos tâches. Vous 
+
+pouvez configurer chaque touche pour déclencher des actions spécifiques, telles que le lancement d'applications, 
+
+l'activation de raccourcis clavier, le contrôle de l'éclairage, le changement de scènes dans les logiciels de 
+
+streaming, et bien plus encore. Grâce à son intégration étroite avec des plateformes populaires telles que OBS 
+
+Studio, Streamlabs, Twitch, YouTube, et bien d'autres, le Stream Deck Plus vous permet de contrôler votre 
+
+expérience de streaming et de création de contenu avec une facilité et une précision accrues. De plus, avec des 
+
+mises à jour régulières du logiciel, de nouvelles fonctionnalités sont continuellement ajoutées pour améliorer 
+
+votre flux de travail et vous offrir une expérience toujours plus riche et personnalisée. Que vous souhaitiez 
+
+améliorer votre productivité, simplifier votre flux de travail ou simplement ajouter une touche de magie à votre 
+
+création de contenu, le Elgato Stream Deck Plus est l'outil parfait pour vous aider à atteindre vos objectifs avec 
+
+style et efficacité.
+</p>
+    <p class="prix">Prix du Produit : 259,99€</p>
+    <button class="buy-button" onclick="showConfirmationMessage()">Ajouter au Panier</button>
+    <div class="security-icons">
+        <img src="https://via.placeholder.com/30" alt="Sécurité des paiements">
+        <span>Paiement sécurisé</span>
     </div>
-</div>
+     <p class="purchase-security">Achetez en toute sécurité grâce à notre système de paiement sécurisé. Nous 
 
-<div class="overlay"></div>
-<div class="modal">
-    <div class="modal-content">
-        <button class="close-button" onclick="closeModal()">X</button>
-        <label for="quantity">Quantité :</label>
-        <input type="number" id="quantity" name="quantity" value="1" min="1"><br><br>
-        <label for="payment-method">Méthode de paiement :</label>
-        <select id="payment-method" name="payment-method">
-            <option value="carte-credit">Carte de crédit</option>
-            <option value="paypal">PayPal</option>
-            <option value="virement">Virement bancaire</option>
-            <option value="livraison">Paiement à la livraison</option>
-        </select><br><br>
-        <button onclick="processPayment()">Confirmer le paiement</button>
+protégeons vos informations personnelles.</p>
     </div>
-</div>
-<div id="paypal-button-container"></div>
 
-<script>
-    function closeModal() {
-        const overlay = document.querySelector('.overlay');
-        const modal = document.querySelector('.modal');
-        overlay.style.display = 'none';
-        modal.style.display = 'none';
-    }
+    <script>
+        const images = [
+            "https://tse4.mm.bing.net/th?id=OIP.vdDKgnWwASrkcqUoexDhfgHaHa&pid=Api&P=0&h=180",
+            "https://tse4.mm.bing.net/th?id=OIP.K91set-WZ2oSjZ_J9w7h5gHaHa&pid=Api&P=0&h=180",
+            "https://tse2.mm.bing.net/th?id=OIP.FbByiykr3hqmu_ldd-FgAAHaHa&pid=Api&P=0&h=180"
+        ];
+        let currentImageIndex = 0;
+        const productImage = document.getElementById('product-image');
 
-    function showConfirmationMessage() {
-        const overlay = document.querySelector('.overlay');
-        const modal = document.querySelector('.modal');
-        overlay.style.display = 'block';
-        modal.style.display = 'block';
-    }
+        document.getElementById('prev-button').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            productImage.src = images[currentImageIndex];
+        });
 
-    function processPayment() {
-        const paymentMethod = document.getElementById('payment-method').value;
-        if (paymentMethod === 'paypal') {
-            paypal.Buttons({
-                createOrder: function(data, actions) {
-                    return actions.order.create({
-                        purchase_units: [{
-                            amount: {
-                                value: '259.99',
-                                currency_code: 'EUR'
-                            }
-                        }]
-                    });
-                },
-                onApprove: function(data, actions) {
-                    return actions.order.capture().then(function(details) {
-                        alert('Paiement confirmé avec PayPal !');
-                    });
-                }
-            }).render('#paypal-button-container');
+        document.getElementById('next-button').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            productImage.src = images[currentImageIndex];
+        });
+
+        function showConfirmationMessage() {
             const overlay = document.querySelector('.overlay');
+            const modal = document.querySelector('.modal');
             overlay.style.display = 'block';
-        } else {
-            alert('Méthode de paiement non prise en charge pour l\'exemple.');
+            modal.style.display = 'block';
         }
-    }
-</script>
+    </script>
+
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-button" onclick="closeModal()">X</button>
+            <label for="quantity">Quantité :</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1"><br><br>
+            <label for="payment-method">Méthode de paiement :</label>
+            <select id="payment-method" name="payment-method">
+                <option value="carte-credit">Carte de crédit</option>
+                <option value="paypal">PayPal</option>
+                <option value="virement">Virement bancaire</option>
+                <option value="livraison">Paiement à la livraison</option>
+            </select><br><br>
+            <button onclick="processPayment()">Confirmer le paiement</button>
+        </div>
+    </div>
+    <div id="paypal-button-container"></div>
+
+    <script>
+        function closeModal() {
+            const overlay = document.querySelector('.overlay');
+            const modal = document.querySelector('.modal');
+            overlay.style.display = 'none';
+            modal.style.display = 'none';
+        }
+
+        function processPayment() {
+            const paymentMethod = document.getElementById('payment-method').value;
+            if (paymentMethod === 'paypal') {
+                paypal.Buttons({
+                    createOrder: function(data, actions) {
+                        return actions.order.create({
+                            purchase_units: [{
+                                amount: {
+                                    value: 259.99,
+                                    currency_code: 'EUR'
+                                }
+                            }]
+                        });
+                    },
+                    onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(details) {
+                            alert('Paiement confirmé avec PayPal !');
+                        });
+                    }
+                }).render('#paypal-button-container');
+                const overlay = document.querySelector('.overlay');
+                overlay.style.display = 'block';
+            } else {
+                alert('Méthode de paiement non prise en charge pour l\'exemple.');
+            }
+        }
+    </script>
 </body>
 </html>
